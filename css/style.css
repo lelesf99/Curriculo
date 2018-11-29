@@ -156,20 +156,14 @@
 		padding-bottom: 0vh;
 	}
 	.box{
-		margin: 2% 2%;
-		width: 92%;
-		box-shadow: 1px 1px 3px black;
-		border-radius: 2px;
+		margin: 0px 0px 4% 0px;
+		width: 96%;
+		box-shadow: 0px 10px 10px black;
+		border-radius: 1px;
 		background-color: white;
 		padding: 2%;
 		transition: margin 0.2s, width 0.2s,border-radius 0.2s,box-shadow 0.2s;
 		transition-timing-function: ease-out;
-	}
-	.box:active{
-		margin: 0px 0px 4% 0px;
-		width: 96%;
-		border-radius: 1px;
-		box-shadow: 0px 10px 10px black;
 	}
 	.skills-box{
 		display: flex;
