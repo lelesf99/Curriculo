@@ -6,10 +6,6 @@
 		font-family: 'Titillium Web', sans-serif;
 		background-image: radial-gradient(#505050, #303030, #101010);
 	}
-	pre,
-	code {
-		
-	}
 	h1,h2,h3,p{
 		cursor: default;
 		width: 100%;
@@ -115,10 +111,6 @@
 		font: 13px/1.5 "Titillium Web", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 		font-family: 'Titillium Web', sans-serif;
 		background-image: radial-gradient(#505050, #303030, #101010);
-	}
-	pre,
-	code {
-		
 	}
 	h1,h2,h3,p{
 		cursor: default;
