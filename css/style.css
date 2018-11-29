@@ -119,11 +119,11 @@
 		transition-timing-function: ease-out;
 	}
 	div.skill:hover p#p-info{
-		height: 50px;
+		height: 60px;
 		overflow: hidden;
 	}
 	div.language:hover p#p-info{
-		height: 50px;
+		height: 60px;
 		overflow: hidden;
 	}
 }
@@ -241,11 +241,11 @@
 		transition-timing-function: ease-out;
 	}
 	div.skill:hover p#p-info{
-		height: 50px;
+		height: 60px;
 		overflow: hidden;
 	}
 	div.language:hover p#p-info{
-		height: 50px;
+		height: 60px;
 		overflow: hidden;
 	}
 }
