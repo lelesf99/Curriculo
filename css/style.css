@@ -1,0 +1,117 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font: 13px/1.5 "Titillium Web", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	background-image: radial-gradient(#505050, #303030, #101010);
+}
+pre,
+code {
+	
+}
+h1,h2,h3,p{
+	cursor: default;
+	width: 100%;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+div#header{
+	display: flex;
+	background-image: url("../img/profile.jpg"); 
+	background-color: #cccccc;
+	height: 35vh;
+	min-height:  150px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 65vh;
+}
+div#bigname{
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+h1#surname,#name{
+	height: 8vh;
+	font-size: 10vh;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+h2#prof{
+	font-size: 4vh;
+	color: #afafaf;
+}
+.content-box{
+	display: flex;
+}
+.content{
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+	padding-bottom: 0vh;
+}
+@media screen and (max-width: 800px) {
+	.content-box{
+		flex-flow: column;
+	}
+	.content{
+		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+}
+
+.box{
+	margin: 2% 2%;
+	width: 92%;
+	box-shadow: 1px 1px 3px black;
+	border-radius: 2px;
+	background-color: white;
+	padding: 2%;
+	transition: margin 0.2s, width 0.2s,border-radius 0.2s,box-shadow 0.2s;
+	transition-timing-function: ease-out;
+}
+.box:hover{
+	margin: 0px 0px 4% 0px;
+	width: 96%;
+	border-radius: 1px;
+	box-shadow: 0px 10px 10px black;
+}
+.skills-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.lang-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.language{
+	width: 50%;
+	height: 50%;
+}
+.skill{
+	width: 50%;
+	height: 50%;
+}
+div.levelbar{
+	background-color: lightgray;
+	width: 90%;
+	height: 1.5vh;
+	max-height: 15px;
+	border-radius: 5px;
+}
+div.level{
+	height: 1.5vh;
+	max-height: 15px;
+	width: 0px;
+	background-color: #5780CD;
+	position: relative;
+	border-radius: 5px;
+}
+div.extrabar{
+	height: 1.5vh;
+	max-height: 15px;
+	width: 0px;
+	background-color: #2AC075;
+	position: relative;
+	border-radius: 5px;
+}
