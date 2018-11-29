@@ -70,7 +70,7 @@ h2#prof{
 	transition: margin 0.2s, width 0.2s,border-radius 0.2s,box-shadow 0.2s;
 	transition-timing-function: ease-out;
 }
-.box:hover{
+.box:click{
 	margin: 0px 0px 4% 0px;
 	width: 96%;
 	border-radius: 1px;
