@@ -103,6 +103,21 @@
 		position: relative;
 		border-radius: 5px;
 	}
+	p#p-info{
+		height: 0px;
+		max-height: ;
+		overflow: hidden;
+		transition: height 0.2s;
+		transition-timing-function: ease-out;
+	}
+	div.skill:hover p#p-info{
+		height: 50px;
+		overflow: hidden;
+	}
+	div.language:hover p#p-info{
+		height: 50px;
+		overflow: hidden;
+	}
 }
 @media screen and (max-width: 800px) {
 		body{
@@ -162,8 +177,6 @@
 		border-radius: 1px;
 		background-color: white;
 		padding: 2%;
-		transition: margin 0.2s, width 0.2s,border-radius 0.2s,box-shadow 0.2s;
-		transition-timing-function: ease-out;
 	}
 	.skills-box{
 		display: flex;
@@ -203,5 +216,20 @@
 		background-color: #2AC075;
 		position: relative;
 		border-radius: 5px;
+	}
+	p#p-info{
+		height: 0px;
+		max-height: ;
+		overflow: hidden;
+		transition: height 0.2s;
+		transition-timing-function: ease-out;
+	}
+	div.skill:hover p#p-info{
+		height: 50px;
+		overflow: hidden;
+	}
+	div.language:hover p#p-info{
+		height: 50px;
+		overflow: hidden;
 	}
 }
