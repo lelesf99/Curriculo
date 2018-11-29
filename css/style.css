@@ -4,7 +4,7 @@
 		padding: 0px;
 		font: 13px/1.5 "Titillium Web", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 		font-family: 'Titillium Web', sans-serif;
-		background-image: radial-gradient(#505050, #303030, #101010);
+		background-image: radial-gradient(#707070, #404040, #050505);
 	}
 	h1,h2,h3,p{
 		cursor: default;
@@ -67,10 +67,18 @@
 	.skills-box{
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 	.lang-box{
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 	.language{
 		width: 50%;
@@ -181,10 +189,18 @@
 	.skills-box{
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 	.lang-box{
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 	.language{
 		width: 50%;
