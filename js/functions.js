@@ -1,7 +1,6 @@
 //The vector v is used to set the level of the skills and languages
 //the values of v are n*5%, and are respectively [developer,servers,database,math,ptbr,eng,spanish]
-var v = [11,7,5,14,12,15,2];
-var vaux = [0,0,0,0,0,0,0];
+
 var headerdone = false;
 var levelbarsdone = false;
 //This function will be use in most of the animations
@@ -40,32 +39,30 @@ function circ(timeFraction) {
 var quadEaseOut = makeEaseOut(quad);
 //levelbars animations
 function setlevelbars() {
-
+  
+  //These vector is used to set the level of the skills and languages
+  //their values are n*5%, and are respectively [developer,design,database,math,ptbr,eng,spanish]
+  let levelbars      = [10,10,3,10,10,10,2];
+  let extralevelbars = [1, 5,0, 2,2, 2, 0];
+  
   if(levelbarsdone==false){
     animate({
       duration: 1000,
       timing: quadEaseOut,
       draw: function(progress) {
         for(i=0;i<7;i++){
-          if(progress==1){
+          if(progress == 1){
             animate({
               duration: 1000,
               timing: quadEaseOut,
               draw: function(progress) {
-
                 for(i=0;i<7;i++){
-                  document.getElementById('extrabar' + i).style.width = progress * vaux[i] * 10 + '%';
+                  document.getElementById('extrabar' + i).style.width = progress * extralevelbars[i] * 10 + '%';
                 }
               }
             });
           }
-          if(v[i]<=10){
-            document.getElementById('level' + i).style.width = progress * v[i] * 10 + '%';
-            vaux[i]=0;
-          }else{
-            document.getElementById('level' + i).style.width = progress * 100 + '%';
-            vaux[i]=v[i]-10;
-          }
+          document.getElementById('level' + i).style.width = progress * levelbars[i] * 10 + '%';
         }
       }
     });
@@ -76,25 +73,24 @@ function setlevelbars() {
 function header(){
   let y = getY();
   if(y >= 10 && headerdone==false){
-    let content = document.getElementById('content')
+    let content = document.getElementById('content');
     let head = document.getElementById('header');
     headerdone = true;
     animate({
       duration: 1000,
       timing: quadEaseOut,
       draw: function(progress) {
-        head.style.paddingTop = 65 - (65 * progress) + 'vh';
+        head.style.paddingTop = 70 - (70 * progress) + 'vh';
       }
     });
     animate({
       duration: 1000,
       timing: quadEaseOut,
       draw: function(progress) {
-        content.style.paddingBottom =  (20 * progress) + 'vh';
+        content.style.height =  (70 * progress) + 'vh';
       }
     });
   }
-
   setlevelbars();
 }
 function getY(){
