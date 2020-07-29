@@ -172,7 +172,7 @@ p#p-info{
 		font-weight: 700;
 	}
 	.level-box:hover  #p-info{
-		height: 50px;
+		height: 60px;
 		overflow: hidden;
 	}
 }
