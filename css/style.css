@@ -8,7 +8,7 @@ body{
 	padding: 0px;
 	font: 13px/1.5 "Titillium Web", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 	font-family: 'Titillium Web', sans-serif;
-	background-image: radial-gradient(#707070, #404040, #050505);
+	background-image: radial-gradient(#303030, #404040, #050505);
 }
 a{
 	text-decoration: none;
@@ -22,7 +22,7 @@ h1,h2,h3,p{
 }
 div#header{
 	display: flex;
-	background-image: url("../img/profile.jpg"); 
+	background-image: url("../img/profile.png"); 
 	background-color: #cccccc;
 	height: 30vh;
 	min-height:  150px;
