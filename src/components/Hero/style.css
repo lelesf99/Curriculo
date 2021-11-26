@@ -1,0 +1,30 @@
+/* Hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero::after {
+  content: '';
+  background-color: var(--light-color);
+  position: absolute;
+  inset: 0;
+  bottom: -1px;
+  mix-blend-mode: color;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.sub-title {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}

@@ -1,0 +1,112 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.app {
+  opacity: 0;
+  height: 100vh;
+  padding: 1rem;
+  overflow: auto;
+  animation: fadeIn 500ms forwards;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+.theme-btn {
+  background-color: var(--off-white);
+  border-radius: var(--border-radius-pill);
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+}
+
+.theme-btn {
+  z-index: 1;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  border-radius: var(--border-radius-pill);
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  right: 3rem;
+  bottom: 3rem;
+  cursor: pointer;
+}
+
+.theme-btn:focus,
+.theme-btn:hover {
+  background-color: var(--off-black);
+  color: var(--off-white);
+}
+
+.profile-pic {
+  display: inline;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: var(--border-radius-pill);
+  flex: 1 1 300px;
+}
+
+.profile-pic img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  text-align: justify;
+}
+
+.boids-text {
+  flex: 1 1 calc(100% - 500px - 4rem);
+  text-align: justify;
+}
+
+video {
+  border-radius: var(--border-radius);
+  max-width: 500px;
+}
+
+
+.card.click-card {
+  position: relative;
+}
+
+.card.click-card .card-body p {
+  margin-top: 1.5rem;
+}
+
+.card.click-card .card-header h2 {
+  z-index: 1;
+}
+
+.card.click-card .level-wrapp {
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+  inset: 0;
+  margin: 0;
+  transform-origin: top;
+  transition: all 250ms;
+}
+
+.card.click-card.active .level-wrapp {
+  top: 3.8rem;
+  height: 2rem;
+  transform: scaleX(.95);
+}

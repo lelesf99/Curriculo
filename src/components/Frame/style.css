@@ -1,0 +1,32 @@
+.frame {
+    position: relative;
+    outline: solid 3px var(--dark-color2);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.frame .title {
+    position: absolute;
+    top: -1.5em;
+    left: 1rem;
+    background: var(--off-white);
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.frame:focus {
+    outline: solid 4px var(--dark-color);
+}
+
+@media screen and (max-width: 640px) {
+    .frame .title {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,46 @@
+.card {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: #00000020 solid 1px;
+    padding: 1em;
+}
+
+.card-body {
+    /* border-bottom: #00000020 solid 1px; */
+    padding: 1em;
+}
+
+.card-body.collapse {
+    padding: 0;
+    transition: opacity 250ms, height 250ms 250ms ease;
+}
+
+.active .card-body.collapse {
+    transition: opacity 250ms, height 250ms ease;
+}
+
+.collapse-padding {
+    padding: 1em;
+}
+
+.card-footer {
+    padding: 1em;
+}
+
+.click-card {
+    cursor: pointer;
+    transition: transform 250ms var(--bounce);
+    flex: 1 1 calc(50% - 4rem);
+}
+
+.click-card:hover,
+.click-card:focus {
+    transform: scale(1.0625);
+    z-index: 1;
+}

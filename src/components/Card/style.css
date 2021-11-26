@@ -1,0 +1,21 @@
+.card {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+    min-width: 280px;
+    max-width: 480px;
+}
+
+.card-header {
+    border-bottom: #00000020 solid 1px;
+    padding: 1em;
+}
+
+.card-body {
+    border-bottom: #00000020 solid 1px;
+    padding: 1em;
+}
+
+.card-footer {
+    padding: 1em;
+}
