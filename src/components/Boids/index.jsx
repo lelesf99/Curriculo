@@ -459,7 +459,7 @@ export default function Boids(props) {
             }
             draw() {
                 this.update();
-                drawLine(this.prePos, this.pos, 1, this.color);
+                drawLine(this.prePos, this.pos, 5, this.color);
             }
         }
         let flock = [];
@@ -469,8 +469,12 @@ export default function Boids(props) {
         let intY = canvas.height / 2;
         let interest = 0;
         let intFac = 0;
+        let nBoids = 512;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            nBoids = 256;
+        }
 
-        for (var i = 0; i < 512; i++) {
+        for (var i = 0; i < nBoids; i++) {
             flock.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height));
         }
         let animReq;
@@ -538,6 +542,17 @@ export default function Boids(props) {
         canvas.addEventListener('touchstart', process_touchstart, false);
         canvas.addEventListener('touchmove', process_touchmove, false);
         canvas.addEventListener('touchend', process_touchend, false);
+
+        window.addEventListener("resize", () => {
+
+            width = canvas.clientWidth;
+            height = canvas.clientHeight;
+
+            canvas.width = width;
+            canvas.height = height;
+            offCanvas.width = width;
+            offCanvas.height = height;
+        });
 
         function process_touchstart(event) {
             event.preventDefault();
