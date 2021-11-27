@@ -2,5 +2,6 @@ canvas {
     position: relative;
     border-radius: var(--border-radius);
     max-width: 500px;
+    max-height: 500px;
     width: 100%;
 }

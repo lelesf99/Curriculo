@@ -26,7 +26,6 @@
     background-color: var(--light-color2);
     transform: scaleX(0);
     transform-origin: left;
-    animation: fill 1s ease-in forwards;
 }
 
 .level-2 {
@@ -35,5 +34,13 @@
     background-color: var(--light-color);
     transform: scaleX(0);
     transform-origin: left;
-    animation: fill 1.5s 1s ease-out forwards;
+}
+
+.level-1.anim {
+    animation: fill 1s ease forwards;
+}
+
+.level-2.anim {
+    animation: fill 1s 1s ease forwards;
+
 }

@@ -18,8 +18,8 @@ export default function Boids() {
         const canvas = canvasRef.current;
         const c = canvas.getContext("2d");
 
-        let height = 500;
-        let width = 500;
+        let width = canvas.clientWidth;
+        let height = canvas.clientHeight;
 
         const offCanvas = new OffscreenCanvas(width, height);
         const offCtx = offCanvas.getContext("2d");

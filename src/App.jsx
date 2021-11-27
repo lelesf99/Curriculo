@@ -12,6 +12,7 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md'
 function App() {
 
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? JSON.parse(localStorage.getItem('theme')) : true);
+  const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme));
@@ -25,7 +26,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className={`app`} >
+    <div className={`app`} onScroll={(e) => setScroll(e.target.scrollTop)}>
       {!theme ? <MdDarkMode className='theme-btn' tabIndex={0} onClick={() => setTheme(true)} /> : <MdLightMode className='theme-btn' tabIndex={0} onClick={() => setTheme(false)} />}
       <Frame className='container' title='Vinícius Leles Feitosa'>
         <>
@@ -50,7 +51,7 @@ function App() {
           header={
             <>
               <h2>Programação</h2>
-              <LevelBar level={13}></LevelBar>
+              <LevelBar scroll={scroll} level={13}></LevelBar>
             </>
           }
           body={
@@ -64,7 +65,7 @@ function App() {
           header={
             <>
               <h2>Frontend</h2>
-              <LevelBar level={16}></LevelBar>
+              <LevelBar scroll={scroll} level={16}></LevelBar>
             </>
           }
           body={
@@ -78,7 +79,7 @@ function App() {
           header={
             <>
               <h2>Backend</h2>
-              <LevelBar level={8}></LevelBar>
+              <LevelBar scroll={scroll} level={8}></LevelBar>
             </>
           }
           body={
@@ -91,7 +92,7 @@ function App() {
           header={
             <>
               <h2>Projeto de Software</h2>
-              <LevelBar level={8}></LevelBar>
+              <LevelBar scroll={scroll} level={8}></LevelBar>
             </>
           }
           body={
