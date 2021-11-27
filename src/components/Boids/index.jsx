@@ -1,11 +1,17 @@
 import './style.css';
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Boids(props) {
 
+    const canvasRef = useRef();
+    const [visible, setvisible] = useState(false);
+
+    function isScrolledIntoView(el) {
+        let rect = el.getBoundingClientRect();
+        return (rect.top >= (0 - rect.height)) && (rect.bottom <= (window.innerHeight + rect.height));
+    }
+
     useEffect(() => {
-
-
         class Circle {
             constructor(x, y, r) {
                 this.x = x;
@@ -172,7 +178,7 @@ export default function Boids(props) {
             }
         };
 
-        var canvas = document.querySelector('canvas');
+        let canvas = canvasRef.current;
         var c = canvas.getContext("2d");
 
         var height = 500;
@@ -459,7 +465,7 @@ export default function Boids(props) {
             }
             draw() {
                 this.update();
-                drawLine(this.prePos, this.pos, 5, this.color);
+                drawLine(this.prePos, this.pos, 1, this.color);
             }
         }
         let flock = [];
@@ -478,48 +484,51 @@ export default function Boids(props) {
             flock.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height));
         }
         let animReq;
+
         function animate() {
-            let qtree = new quadTree(quadCap, new Rect(0, 0, width, height));
+            if (isScrolledIntoView(canvas)) {
+                let qtree = new quadTree(quadCap, new Rect(0, 0, width, height));
 
-            for (let i = 0; i < flock.length; i++) {
-                qtree.insert(flock[i]);
+                for (let i = 0; i < flock.length; i++) {
+                    qtree.insert(flock[i]);
+                }
+                c.fillStyle = '#000000' + trail
+                c.fillRect(0, 0, canvas.width, canvas.height);
+
+                offCtx.clearRect(0, 0, canvas.width, canvas.height);
+
+                if (interest > 0) {
+                    interest += intFac;
+                    if (intFac > 0.5) {
+                        intFac = intFac - 0.5;
+                    } else if (intFac > 0 && intFac <= 0.5) {
+                        intFac = 0;
+                    }
+                } else {
+                    interest = 0;
+                }
+                if (interest >= 1) {
+                    drawCircle(new Vector2(intX, intY), interest, '#55555522');
+                }
+
+                for (let i = 0; i < flock.length; i++) {
+                    let range = new Circle(flock[i].pos.x, flock[i].pos.y, flock[i].senseRadius)
+                    flock[i].pushLocalMates(qtree, range);
+                    flock[i].align();
+                    flock[i].cohesion();
+                    flock[i].separate();
+                    if (interest >= 5) {
+                        flock[i].interest(new Vector2(intX, intY), interest);
+                    }
+                    flock[i].popLocalMates();
+                }
+
+                for (let i = 0; i < flock.length; i++) {
+                    flock[i].draw();
+                }
+                c.drawImage(offCanvas, 0, 0);
             }
-            c.fillStyle = '#000000' + trail
-            c.fillRect(0, 0, canvas.width, canvas.height);
-
-            offCtx.clearRect(0, 0, canvas.width, canvas.height);
             animReq = requestAnimationFrame(animate);
-
-            if (interest > 0) {
-                interest += intFac;
-                if (intFac > 0.5) {
-                    intFac = intFac - 0.5;
-                } else if (intFac > 0 && intFac <= 0.5) {
-                    intFac = 0;
-                }
-            } else {
-                interest = 0;
-            }
-            if (interest >= 1) {
-                drawCircle(new Vector2(intX, intY), interest, '#55555522');
-            }
-
-            for (let i = 0; i < flock.length; i++) {
-                let range = new Circle(flock[i].pos.x, flock[i].pos.y, flock[i].senseRadius)
-                flock[i].pushLocalMates(qtree, range);
-                flock[i].align();
-                flock[i].cohesion();
-                flock[i].separate();
-                if (interest >= 5) {
-                    flock[i].interest(new Vector2(intX, intY), interest);
-                }
-                flock[i].popLocalMates();
-            }
-
-            for (let i = 0; i < flock.length; i++) {
-                flock[i].draw();
-            }
-            c.drawImage(offCanvas, 0, 0);
         }
         animate();
 
@@ -577,10 +586,9 @@ export default function Boids(props) {
             flock = [];
             cancelAnimationFrame(animReq);
         }
-    }, []);
-
+    }, [visible]);
 
     return (
-        <canvas width="100%"></canvas>
+        <canvas width="100%" ref={canvasRef}></canvas>
     );
 }
