@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Curriculo/static/css/main.1906ea1b.chunk.css",
-    "main.js": "/Curriculo/static/js/main.70684459.chunk.js",
-    "main.js.map": "/Curriculo/static/js/main.70684459.chunk.js.map",
+    "main.css": "/Curriculo/static/css/main.8190064f.chunk.css",
+    "main.js": "/Curriculo/static/js/main.cc6da03d.chunk.js",
+    "main.js.map": "/Curriculo/static/js/main.cc6da03d.chunk.js.map",
     "runtime-main.js": "/Curriculo/static/js/runtime-main.8a63aed1.js",
     "runtime-main.js.map": "/Curriculo/static/js/runtime-main.8a63aed1.js.map",
     "static/js/2.3ff8cd78.chunk.js": "/Curriculo/static/js/2.3ff8cd78.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.dd888930.chunk.js": "/Curriculo/static/js/3.dd888930.chunk.js",
     "static/js/3.dd888930.chunk.js.map": "/Curriculo/static/js/3.dd888930.chunk.js.map",
     "index.html": "/Curriculo/index.html",
-    "static/css/main.1906ea1b.chunk.css.map": "/Curriculo/static/css/main.1906ea1b.chunk.css.map",
+    "static/css/main.8190064f.chunk.css.map": "/Curriculo/static/css/main.8190064f.chunk.css.map",
     "static/js/2.3ff8cd78.chunk.js.LICENSE.txt": "/Curriculo/static/js/2.3ff8cd78.chunk.js.LICENSE.txt",
     "static/media/profile.66afccc6.jpg": "/Curriculo/static/media/profile.66afccc6.jpg",
     "static/media/react-difuse.c1a81a55.mp4": "/Curriculo/static/media/react-difuse.c1a81a55.mp4"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.8a63aed1.js",
     "static/js/2.3ff8cd78.chunk.js",
-    "static/css/main.1906ea1b.chunk.css",
-    "static/js/main.70684459.chunk.js"
+    "static/css/main.8190064f.chunk.css",
+    "static/js/main.cc6da03d.chunk.js"
   ]
 }
