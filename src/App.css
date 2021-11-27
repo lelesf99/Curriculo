@@ -24,19 +24,11 @@
 }
 
 .theme-btn {
-  background-color: var(--off-white);
-  border-radius: var(--border-radius-pill);
-  position: fixed;
-  width: 4rem;
-  height: 4rem;
-  box-shadow: var(--box-shadow-heavy);
-}
-
-.theme-btn {
-  z-index: 1;
+  z-index: 2;
   background-color: var(--off-white);
   color: var(--off-black);
   border-radius: var(--border-radius-pill);
+  box-shadow: var(--box-shadow-heavy);
   position: fixed;
   width: 4rem;
   height: 4rem;
