@@ -29,6 +29,7 @@
   position: fixed;
   width: 4rem;
   height: 4rem;
+  box-shadow: var(--box-shadow-heavy);
 }
 
 .theme-btn {
@@ -42,6 +43,7 @@
   right: 3rem;
   bottom: 3rem;
   cursor: pointer;
+  transition: color 100ms, background-color 100ms;
 }
 
 .theme-btn:focus,
@@ -87,8 +89,17 @@ video {
   position: relative;
 }
 
+
+.card.click-card:not(.active) {
+  outline: solid 3px var(--light-color3);
+}
+
+.card.click-card:not(.active) .card-header {
+  border: none;
+}
+
 .card.click-card .card-body p {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .card.click-card .card-header h2 {
@@ -102,11 +113,11 @@ video {
   inset: 0;
   margin: 0;
   transform-origin: top;
-  transition: all 250ms;
+  transition: top 250ms, transform 250ms, height 250ms;
 }
 
 .card.click-card.active .level-wrapp {
-  top: 3.8rem;
+  top: 5rem;
   height: 2rem;
   transform: scaleX(.95);
 }

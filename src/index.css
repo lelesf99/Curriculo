@@ -21,14 +21,14 @@ code {
   --box-shadow-heavy: 0 0 1rem #00000055;
   --border-radius-rounded: 1em;
   --border-radius-pill: 100vw;
-  --border-radius: .4em;
+  --border-radius: .2em;
   --bounce: cubic-bezier(0.5, 2.2, 0.6, 0.5);
 }
 
 :root.dark {
   --white: #000000;
   --black: #ffffff;
-  --off-black: #f7fbff;
+  --off-black: #e8f3ff;
   --off-white: #17191a;
   --light-color: #145DA0;
   --light-color2: #0C2D48;
@@ -43,7 +43,7 @@ code {
 :root.light {
   --white: #ffffff;
   --black: #000000;
-  --off-white: #f7fbff;
+  --off-white: #e8f3ff;
   --off-black: #17191a;
   --dark-color: #050A30;
   --dark-color2: #0C2D48;

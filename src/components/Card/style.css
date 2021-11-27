@@ -7,12 +7,12 @@
 }
 
 .card-header {
-    border-bottom: #00000020 solid 1px;
+    border-bottom: var(--off-black) solid 1px;
     padding: 1em;
 }
 
 .card-body {
-    border-bottom: #00000020 solid 1px;
+    border-bottom: var(--off-black) solid 1px;
     padding: 1em;
 }
 

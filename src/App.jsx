@@ -83,7 +83,7 @@ function App() {
           }
           body={
 
-            <p>Experiencia com projetos Firebase, e banco de dados Relacionais (php e mySql), e não relacionais (firebase firestore). Desenvolvimento de APIs com Firebase cloud functions e php, noções de express.js e MongoDb.</p>
+            <p>Experiencia com banco de dados Relacionais (php e mySql), e não relacionais (firebase firestore). Desenvolvimento de APIs com Firebase cloud functions e php, noções de express.js e MongoDb.</p>
           }
         />
         <ClickCard
@@ -103,19 +103,17 @@ function App() {
       <Frame className='container' title='Educação'>
         <div>
 
-          <h3><strong>2003-2006:</strong> Colégio Logosófico.</h3><br />
-          <h3><strong>2006-2013:</strong> Ateneu Salesiano Dom Bosco.</h3><br />
-          <h3><strong>2013-2017:</strong> Col. Agostiniano N. S. de Fatima.</h3><br />
-          <h3><strong>2014-2016:</strong> Curso técnico de Web dev.</h3><br />
-          <h3><strong>2018- ... :</strong> Cursando a graduação de Ciência da Computação na UFG.</h3><br />
+          <h3>MÉDIO  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA</h3><br />
+          <h3>TÉCNICO  |  2014 - 2016 (300HRS)  |  MCTECH –  CURSO DE DESENVOLVIMENTO WEB</h3><br />
+          <h3>SUPERIOR  |  (CURSANDO)  |  UNIVERSIDADE FEDERAL DE GOIÁS – CIÊNCIA DA COMPUTAÇÃO</h3><br />
         </div>
       </Frame>
 
       <Frame className='container' title='Experiência'>
         <div>
 
-          <h3><strong>2015- ... :</strong> Projetos pessoais e universitários em Web e C, no meu <a href="https://github.com/lelesf99" target="_blank" rel="noreferrer">Github</a>.</h3><br />
-          <h3><strong>2020- ... :</strong> Estágio na Controladoria Geral do Estado de Goiás, trabalhando na equipe de TI como desenvolvedor web full-stack de hotsites, e manutenção dos sites da CGE e do Portal da Transparência de Goiás (HTML, CSS, Javascript, php, mySql e Joomla).</h3><br />
+          <h3>Projetos pessoais e universitários em Web e C, no meu <a href="https://github.com/lelesf99" target="_blank" rel="noreferrer">Github</a>.</h3><br />
+          <h3><strong>ESTAGIÁRIO  |  CGE  | 2020 - ATUAL</strong> Estágio na Controladoria Geral do Estado de Goiás, trabalhando na equipe de TI como desenvolvedor web full-stack de hotsites, e manutenção dos sites da CGE e do Portal da Transparência de Goiás (HTML, CSS, Javascript, php, mySql e Joomla).</h3><br />
         </div>
       </Frame>
 

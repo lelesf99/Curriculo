@@ -6,13 +6,13 @@
     overflow: hidden;
 }
 
-.card-header {
-    border-bottom: #00000020 solid 1px;
+.card-header:not(:last-child) {
+    border-bottom: var(--off-black) solid 1px;
     padding: 1em;
 }
 
-.card-body {
-    /* border-bottom: #00000020 solid 1px; */
+.card-body:not(:last-child) {
+    border-bottom: var(--off-black) solid 1px;
     padding: 1em;
 }
 

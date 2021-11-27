@@ -17,6 +17,7 @@
     border-radius: var(--border-radius);
     overflow: hidden;
     margin-top: 1rem;
+    outline: solid 4px var(--light-color3);
 }
 
 .level-1 {
@@ -25,7 +26,7 @@
     background-color: var(--light-color2);
     transform: scaleX(0);
     transform-origin: left;
-    animation: fill .8s ease-in forwards;
+    animation: fill 1s ease-in forwards;
 }
 
 .level-2 {
@@ -34,5 +35,5 @@
     background-color: var(--light-color);
     transform: scaleX(0);
     transform-origin: left;
-    animation: fill .8s .8s ease-out forwards;
+    animation: fill 1.5s 1s ease-out forwards;
 }
