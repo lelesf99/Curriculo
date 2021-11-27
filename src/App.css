@@ -96,6 +96,7 @@ video {
 
 .card.click-card .card-header h2 {
   z-index: 1;
+  white-space: nowrap;
 }
 
 .card.click-card .level-wrapp {
