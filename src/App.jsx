@@ -6,11 +6,12 @@ import Boids from './components/Boids';
 import ClickCard from './components/ClickCard';
 import LevelBar from './components/LevelBar';
 import ReactionDiffusion from './img/react-difuse.mp4'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
 function App() {
 
+  const appRef = useRef();
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? JSON.parse(localStorage.getItem('theme')) : true);
   const [scroll, setScroll] = useState(0);
 
@@ -25,8 +26,19 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    const ref = appRef;
+    ref.current.addEventListener('scroll', (e) => setScroll(e.target.scrollTop), {
+      capture: true,
+      passive: true
+    });
+    return () => {
+      ref.current.removeEventListener('scroll', (e) => setScroll(e.target.scrollTop));
+    }
+  }, []);
+
   return (
-    <div className={`app`} onScroll={(e) => setScroll(e.target.scrollTop)}>
+    <div className={`app`} ref={appRef}>
       {!theme ? <MdDarkMode className='theme-btn' tabIndex={0} onClick={() => setTheme(true)} /> : <MdLightMode className='theme-btn' tabIndex={0} onClick={() => setTheme(false)} />}
       <Frame className='container' title='Vinícius Leles Feitosa'>
         <>
