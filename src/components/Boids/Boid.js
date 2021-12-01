@@ -121,7 +121,7 @@ export default class Boid {
         }
         diff.mult(d);
         diff.sub(this.pos);
-        this.seek(diff, 0.00005 * (d * i));
+        this.seek(diff, 0.0001220703125 * (d * i));
     }
     seek(target, fac) {
         target.setMag(this.maxspeed);

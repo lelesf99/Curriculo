@@ -4,6 +4,7 @@
     border-radius: var(--border-radius);
     min-width: 150px;
     overflow: hidden;
+    transition: background-color 500ms;
 }
 
 .card-header:not(:last-child) {

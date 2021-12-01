@@ -23,6 +23,7 @@ code {
   --border-radius-pill: 100vw;
   --border-radius: .2em;
   --bounce: cubic-bezier(0.5, 2.2, 0.6, 0.5);
+
 }
 
 :root.dark {
@@ -55,6 +56,13 @@ code {
   --danger-color2: #be3535;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+}
 
 ::-webkit-scrollbar {
   width: .8em;
@@ -81,14 +89,6 @@ code {
     scrollbar-color: var(--light-color2) var(--dark-color2);
     scrollbar-width: thin;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto Slab', serif, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -131,6 +131,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--off-white);
   color: var(--dark-color);
+  transition: color 250ms, background-color 500ms;
 }
 
 code {

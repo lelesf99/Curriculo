@@ -74,6 +74,7 @@
 video {
   border-radius: var(--border-radius);
   max-width: 500px;
+  margin: auto;
 }
 
 
@@ -106,11 +107,11 @@ video {
   inset: 0;
   margin: 0;
   transform-origin: top;
-  transition: top 250ms, transform 250ms, height 250ms;
+  transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
 }
 
 .card.click-card.active .level-wrapp {
-  top: 5rem;
+  top: 5.4rem;
   height: 2rem;
-  transform: scaleX(.95);
+  transform: scaleX(.9);
 }

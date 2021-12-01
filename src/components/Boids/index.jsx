@@ -21,7 +21,9 @@ export default function Boids() {
         let width = canvas.clientWidth;
         let height = canvas.clientHeight;
 
-        const offCanvas = new OffscreenCanvas(width, height);
+        const offCanvas = document.createElement('canvas');
+        offCanvas.width = width;
+        offCanvas.height = height;
         const offCtx = offCanvas.getContext("2d");
 
         canvas.width = width;

@@ -1,6 +1,6 @@
 .frame {
     position: relative;
-    outline: solid 4px var(--dark-color2);
+    outline: solid 3px var(--dark-color2);
     border-radius: var(--border-radius);
     padding: 2rem;
     margin-top: 4rem;
@@ -19,10 +19,11 @@
     background: var(--off-white);
     padding: 1rem;
     white-space: nowrap;
+    transition: background-color 500ms;
 }
 
 .frame:focus {
-    outline: solid 4px var(--dark-color3);
+    outline: solid 3px var(--dark-color3);
 }
 
 @media screen and (max-width: 640px) {

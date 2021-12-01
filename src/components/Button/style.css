@@ -10,6 +10,7 @@
     background-color: var(--light-color2);
     overflow: hidden;
     z-index: 1;
+    transition: background-color 500ms;
 
     /* for links */
     text-align: center;

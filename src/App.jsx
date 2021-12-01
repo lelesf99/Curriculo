@@ -68,7 +68,7 @@ function App() {
           }
           body={
 
-            <p>Conhecimento de conceitos fundamentais e avançados de estruturas de dados, análise de algoritmos e matemática para computação.</p>
+            <p>Conhecimento de conceitos fundamentais e avançados de estruturas de dados, análise e projeto de algoritmos e matemática para computação.</p>
 
           }
         />
@@ -91,12 +91,12 @@ function App() {
           header={
             <>
               <h2>Backend</h2>
-              <LevelBar scroll={scroll} level={8}></LevelBar>
+              <LevelBar scroll={scroll} level={9}></LevelBar>
             </>
           }
           body={
 
-            <p>Experiencia com banco de dados Relacionais (php e mySql), e não relacionais (firebase firestore). Desenvolvimento de APIs com Firebase cloud functions e php, noções de express.js e MongoDb.</p>
+            <p>Experiencia com banco de dados relacionais (php e mySql), e não relacionais (firebase firestore). Desenvolvimento de APIs com Firebase cloud functions e php, noções de express.js e MongoDb.</p>
           }
         />
         <ClickCard
@@ -108,7 +108,7 @@ function App() {
             </>
           }
           body={
-            <p>Conhecimento de metodologias ágeis, modelos de ciclo de vida e de projetos de software. Noções de engenharia de software e experiência com desenvolvimento em equipe e versionamento de código (Git).</p>
+            <p>Experiência com desenvolvimento em equipe e versionamento de código (Git). Conhecimentos gerais de engenharia de software: metodologias ágeis, modelos de ciclo de vida e projeto de software</p>
           }
         />
       </Frame>
@@ -140,7 +140,7 @@ function App() {
           <h2>Algoritmo de Boids por <a href="https://www.red3d.com/cwr/index.html">Craig Reynolds</a></h2><br />
           <p>Inspirado pelos vídeos de <a href="https://www.youtube.com/watch?v=bqtqltqcQhw" target="_blank" rel="noreferrer">Sebastian Lague</a>, e <a href="https://www.youtube.com/watch?v=mhjuuHl6qHM&t" target="_blank" rel="noreferrer">Daniel Shiffman</a>, implementei minha versão, utilizando os métodos de renderização do <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank" rel="noreferrer">Canvas API</a>.</p><br />
           <p>Otimizei a implementação com o método quadtree e fazendo com que cada entidade busque um numero fixo de vizinhos, se a entidade está azul. ela está procurando mais vizinhos, se estiver vermelha, o contrário.</p><br />
-          <p>Você pode clicar e segurar para elas seguirem om objetivo.</p>
+          <p>Você pode clicar e segurar para elas seguirem um objetivo.</p>
         </div>
       </Frame>
       <Frame className='container' title='Reação-difusão'>
