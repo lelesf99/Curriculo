@@ -1,117 +1,114 @@
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .app {
-  opacity: 0;
-  height: 100vh;
-  padding: 1rem;
-  overflow: auto;
-  animation: fadeIn 500ms forwards;
+    opacity: 0;
+    height: 100vh;
+    padding: 1rem;
+    overflow: auto;
+    animation: fadeIn 500ms forwards;
+    font-size: 15pt;
 }
 
 .container {
-  max-width: 1080px;
-  margin: auto;
-  padding: 2rem;
-  display: flex;
+    position: relative;
+    max-width: 1080px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
 }
 
-.theme-btn {
-  z-index: 2;
-  background-color: var(--off-white);
-  color: var(--off-black);
-  border-radius: var(--border-radius-pill);
-  box-shadow: var(--box-shadow-heavy);
-  position: fixed;
-  width: 4rem;
-  height: 4rem;
-  right: 3rem;
-  bottom: 3rem;
-  cursor: pointer;
-  transition: color 100ms, background-color 100ms;
-}
-
-.theme-btn:focus,
-.theme-btn:hover {
-  background-color: var(--off-black);
-  color: var(--off-white);
-}
 
 .profile-pic {
-  display: inline;
-  max-width: 300px;
-  max-height: 300px;
-  overflow: hidden;
-  border-radius: var(--border-radius-pill);
-  flex: 1 1 300px;
+    display: inline;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: var(--border-radius-pill);
+    flex: 1 1 300px;
 }
 
 .profile-pic img {
-  max-width: 300px;
-  max-height: 300px;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .about-text {
-  flex: 1 1 50%;
-  text-align: justify;
+    flex: 1 1 50%;
+    text-align: justify;
 }
 
-.boids-text {
-  flex: 1 1 calc(100% - 500px - 4rem);
-  text-align: justify;
+.project-text {
+    flex: 1 1 calc(100% - 500px - 4rem);
+    min-width: 300px;
+    text-align: justify;
 }
 
 video {
-  border-radius: var(--border-radius);
-  max-width: 500px;
-  margin: auto;
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    margin: auto;
 }
 
 
 .card.click-card {
-  position: relative;
+    position: relative;
 }
 
 
 .card.click-card:not(.active) {
-  outline: solid 3px var(--light-color3);
+    outline: solid 3px var(--light-color3);
 }
 
 .card.click-card:not(.active) .card-header {
-  border: none;
+    border: none;
 }
 
-.card.click-card .card-body p {
-  margin-top: 3rem;
+.card.click-card .card-body ul {
+    margin-top: 3rem;
+    margin-left: 2rem;
 }
 
 .card.click-card .card-header h2 {
-  z-index: 1;
-  white-space: nowrap;
+    z-index: 1;
+    white-space: nowrap;
 }
 
 .card.click-card .level-wrapp {
-  position: absolute;
-  height: 100%;
-  z-index: 0;
-  inset: 0;
-  margin: 0;
-  transform-origin: top;
-  transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    inset: 0;
+    margin: 0;
+    transform-origin: top;
+    transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
 }
 
 .card.click-card.active .level-wrapp {
-  top: 5.4rem;
-  height: 2rem;
-  transform: scaleX(.9);
+    top: 6rem;
+    height: 2rem;
+    transform: scaleX(.9);
+}
+
+.line {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.line:last-child {
+    margin-bottom: 0rem;
+}
+
+.line:first-child {
+    margin-top: 0rem;
 }

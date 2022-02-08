@@ -12,6 +12,7 @@ export default function Button(props) {
                     disabled={props.disabled ? "disabled" : ""}
                     onClick={props.submit !== undefined ? (e) => { e.preventDefault(); props.submit(); } : () => { return null }}>
                     {props.icon}<span>{props.text}</span>
+                    {props.children}
                 </button >
             );
         } else {
@@ -23,6 +24,7 @@ export default function Button(props) {
                     disabled={props.disabled ? "disabled" : ""}
                     onClick={props.onClick !== undefined ? () => props.onClick() : () => { return null }}>
                     {props.icon}<span>{props.text}</span>
+                    {props.children}
                 </button >
             );
         }
@@ -34,6 +36,7 @@ export default function Button(props) {
                 href={props.href}
                 onClick={props.onClick !== undefined ? () => props.onClick() : () => { return null }}>
                 {props.icon}<span>{props.text}</span>
+                {props.children}
             </a >
         );
     }

@@ -1,0 +1,142 @@
+.action-center {
+    position: sticky;
+    display: block;
+    height: 4rem;
+    top: 0;
+    z-index: 10;
+}
+
+.action-btn {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: var(--off-white);
+    color: var(--off-black);
+    border-radius: var(--border-radius-pill);
+    box-shadow: var(--box-shadow-heavy);
+}
+
+.action-btn:focus,
+.action-btn:hover {
+    background-color: var(--off-black);
+    color: var(--off-white);
+}
+
+.action-btn:focus span,
+.action-btn:focus span::before,
+.action-btn:focus span::after,
+.action-btn:hover span,
+.action-btn:hover span::before,
+.action-btn:hover span::after {
+    background-color: var(--off-white);
+}
+
+/* Three lines ---------------------------*/
+.mobile-nav-toggle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+}
+
+.mobile-nav-toggle:hover {
+    cursor: pointer;
+}
+
+.mobile-nav-toggle span,
+.mobile-nav-toggle span::before,
+.mobile-nav-toggle span::after {
+    position: absolute;
+    top: 1.2rem;
+    width: 2rem;
+    height: 5px;
+    border-radius: 2px;
+    background: var(--dark-color);
+    transition: transform 400ms var(--bounce),
+        opacity 200ms;
+}
+
+.mobile-nav-toggle span::before,
+.mobile-nav-toggle span::after {
+    content: '';
+    left: 0rem;
+}
+
+/* -------------------------------------- */
+/* transforming between X and three lines */
+.mobile-nav-toggle.shown span {
+    transform:
+        translateY(0.8em) rotate(45deg);
+}
+
+.mobile-nav-toggle.shown span::before {
+    transform:
+        translateY(-0.8em) rotate(-90deg);
+}
+
+.mobile-nav-toggle.shown span::after {
+    transition: opacity 50ms;
+    opacity: 0;
+}
+
+.mobile-nav-toggle span::before {
+    top: .8em;
+}
+
+.mobile-nav-toggle span::after {
+    top: 1.6em;
+}
+
+.theme-btn {
+    z-index: 9;
+    position: absolute;
+    cursor: pointer;
+    transition: color 100ms,
+        background-color 100ms,
+        transform 400ms var(--bounce);
+}
+
+.theme-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.theme-btn.shown {
+    transform: translateX(5rem);
+}
+
+.lang-btn {
+    z-index: 8;
+    position: absolute;
+    cursor: pointer;
+    transition: color 100ms,
+        background-color 100ms,
+        transform 400ms 50ms var(--bounce);
+}
+
+.lang-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.lang-btn.shown {
+    transform: translateX(10rem);
+}
+
+.pdf-btn {
+    z-index: 7;
+    position: absolute;
+    cursor: pointer;
+    transition: color 100ms,
+        background-color 100ms,
+        transform 400ms 100ms var(--bounce);
+}
+
+.pdf-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-btn.shown {
+    transform: translateX(15rem);
+}
