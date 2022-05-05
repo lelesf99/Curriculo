@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Curriculo/static/css/main.20651c68.chunk.css",
-    "main.js": "/Curriculo/static/js/main.2aeafcd4.chunk.js",
-    "main.js.map": "/Curriculo/static/js/main.2aeafcd4.chunk.js.map",
-    "runtime-main.js": "/Curriculo/static/js/runtime-main.bfb1383f.js",
-    "runtime-main.js.map": "/Curriculo/static/js/runtime-main.bfb1383f.js.map",
-    "static/js/2.91faa6d8.chunk.js": "/Curriculo/static/js/2.91faa6d8.chunk.js",
-    "static/js/2.91faa6d8.chunk.js.map": "/Curriculo/static/js/2.91faa6d8.chunk.js.map",
-    "static/js/3.1f8ef51f.chunk.js": "/Curriculo/static/js/3.1f8ef51f.chunk.js",
-    "static/js/3.1f8ef51f.chunk.js.map": "/Curriculo/static/js/3.1f8ef51f.chunk.js.map",
+    "main.css": "/Curriculo/static/css/main.ffcb0eeb.chunk.css",
+    "main.js": "/Curriculo/static/js/main.4a5569e7.chunk.js",
+    "main.js.map": "/Curriculo/static/js/main.4a5569e7.chunk.js.map",
+    "runtime-main.js": "/Curriculo/static/js/runtime-main.0becab63.js",
+    "runtime-main.js.map": "/Curriculo/static/js/runtime-main.0becab63.js.map",
+    "static/js/2.57ab2bef.chunk.js": "/Curriculo/static/js/2.57ab2bef.chunk.js",
+    "static/js/2.57ab2bef.chunk.js.map": "/Curriculo/static/js/2.57ab2bef.chunk.js.map",
+    "static/js/3.2316c874.chunk.js": "/Curriculo/static/js/3.2316c874.chunk.js",
+    "static/js/3.2316c874.chunk.js.map": "/Curriculo/static/js/3.2316c874.chunk.js.map",
     "index.html": "/Curriculo/index.html",
-    "static/css/main.20651c68.chunk.css.map": "/Curriculo/static/css/main.20651c68.chunk.css.map",
-    "static/js/2.91faa6d8.chunk.js.LICENSE.txt": "/Curriculo/static/js/2.91faa6d8.chunk.js.LICENSE.txt",
+    "static/css/main.ffcb0eeb.chunk.css.map": "/Curriculo/static/css/main.ffcb0eeb.chunk.css.map",
+    "static/js/2.57ab2bef.chunk.js.LICENSE.txt": "/Curriculo/static/js/2.57ab2bef.chunk.js.LICENSE.txt",
     "static/media/profile.66afccc6.jpg": "/Curriculo/static/media/profile.66afccc6.jpg",
     "static/media/react-difuse.c1a81a55.mp4": "/Curriculo/static/media/react-difuse.c1a81a55.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.bfb1383f.js",
-    "static/js/2.91faa6d8.chunk.js",
-    "static/css/main.20651c68.chunk.css",
-    "static/js/main.2aeafcd4.chunk.js"
+    "static/js/runtime-main.0becab63.js",
+    "static/js/2.57ab2bef.chunk.js",
+    "static/css/main.ffcb0eeb.chunk.css",
+    "static/js/main.4a5569e7.chunk.js"
   ]
 }
