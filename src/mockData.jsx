@@ -62,7 +62,7 @@ export const mockData = {
         },
         exp: {
             frame_title: "Experiência",
-            sub_title: <p>- Projetos pessoais e universitários em Web e C, no meu <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>. <br /><br /></p>,
+            sub_title: <p>- Projetos pessoais e universitários em Web e C, no meu <a href='https://github.com/lelesf99' target="_blank" rel="noopener noreferrer">Github</a>. <br /><br /></p>,
             description: [
                 <>
                     <h3><strong>- DESENVOLVEDOR FRONTEND |  CGE  | 2020 - 2022</strong></h3>
@@ -78,10 +78,10 @@ export const mockData = {
             description: "Alguns dos meus projetos pessoais:",
             boids: {
                 frame_title: "Boids",
-                title: <h2>Algoritmo de Boids por <a href='https://www.red3d.com/cwr/index.html'>Craig Reynolds</a></h2>,
+                title: <h2>Algoritmo de Boids por <a href='https://www.red3d.com/cwr/index.html' target="_blank" rel="noopener noreferrer">Craig Reynolds</a></h2>,
                 description: [
                     <p>
-                        Inspirado pelos vídeos de <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target='_blank' rel='noreferrer'>Sebastian Lague</a>, e <a href='https://www.youtube.com/watch?v=mhjuuHl6qHM&t' target='_blank' rel='noreferrer'>Daniel Shiffman</a>, implementei minha versão, utilizando os métodos de renderização do <a href='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target='_blank' rel='noreferrer'>Canvas API</a>.
+                        Inspirado pelos vídeos de <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target="_blank" rel="noopener noreferrer">Sebastian Lague</a>, e <a href='https://www.youtube.com/watch?v=mhjuuHl6qHM&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>, implementei minha versão, utilizando os métodos de renderização do <a href='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target="_blank" rel="noopener noreferrer">Canvas API</a>.
                     </p>,
                     <p>Otimizei a implementação com o método quadtree e fazendo com que cada entidade busque um numero fixo de vizinhos, se a entidade está azul. ela está procurando mais vizinhos, se estiver vermelha, o contrário.</p>,
                     <p>Você pode clicar e segurar para elas seguirem um objetivo.</p>,
@@ -89,10 +89,10 @@ export const mockData = {
             },
             reactionDiffusion: {
                 frame_title: "Reação-difusão",
-                title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target='_blank' rel='noreferrer'>Modelo de Reação-Difusão</a></h2>,
+                title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target="_blank" rel="noopener noreferrer">Modelo de Reação-Difusão</a></h2>,
                 description: [
-                    <p>Novamente, inspirado no vídeo de <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target='_blank' rel='noreferrer'>Daniel Shiffman</a>. Seguindo a implementação de <a href='http://karlsims.com/rd.html' target='_blank' rel='noreferrer'>Karl Sims</a> e os trabalhos de <a href='http://mrob.com/pub/comp/xmorphia/' target='_blank' rel='noreferrer'>Gray-Scott</a>, fiz primeiro uma versão utilizando a <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseCPU/index.html' target='_blank' rel='noreferrer'>Canvas API</a>.</p>,
-                    <p>Pesquisando sobre WebGL, implementei <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target='_blank' rel='noreferrer'>o mesmo algoritmo utilizando WebGL</a>, aplicando as pesadas formulas de convolução na GPU, melhorando drastiacamente a performance.</p>,
+                    <p>Novamente, inspirado no vídeo de <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>. Seguindo a implementação de <a href='http://karlsims.com/rd.html' target="_blank" rel="noopener noreferrer">Karl Sims</a> e os trabalhos de <a href='http://mrob.com/pub/comp/xmorphia/' target="_blank" rel="noopener noreferrer">Gray-Scott</a>, fiz primeiro uma versão utilizando a <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseCPU/index.html' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
+                    <p>Pesquisando sobre WebGL, implementei <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">o mesmo algoritmo utilizando WebGL</a>, aplicando as pesadas formulas de convolução na GPU, melhorando drastiacamente a performance.</p>,
                 ],
             }
 
@@ -161,7 +161,7 @@ export const mockData = {
         },
         exp: {
             frame_title: "Experience",
-            sub_title: <p>- Personal and university projects in Web and C, on my <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>.<br /><br /></p>,
+            sub_title: <p>- Personal and university projects in Web and C, on my <a href='https://github.com/lelesf99' target="_blank" rel="noopener noreferrer">Github</a>.<br /><br /></p>,
             description: [
                 <>
                     <h3><strong>- FRONTEND DEVELOPER |  CGE  | 2020 - 2022</strong></h3>
@@ -179,17 +179,17 @@ export const mockData = {
                 frame_title: "Boids",
                 title: <h2>Boids Algorithm by por <a href='https://www.red3d.com/cwr/index.html'>Craig Reynolds</a></h2>,
                 description: [
-                    <p>"Inspired by the videos of <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target='_blank' rel='noreferrer'>Sebastian Lague</a>, and <a href='https ://www.youtube.com/watch?v=mhjuuHl6qHM&t' target='_blank' rel='noreferrer'>Daniel Shiffman</a>, I implemented my version, using the rendering methods of <a href='https: //developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target='_blank' rel='noreferrer'>Canvas API</a>.</p>,
+                    <p>"Inspired by the videos of <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target="_blank" rel="noopener noreferrer">Sebastian Lague</a>, and <a href='https ://www.youtube.com/watch?v=mhjuuHl6qHM&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>, I implemented my version, using the rendering methods of <a href='https: //developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
                     <p>I optimized the implementation with the quadtree method and making each entity look for a fixed number of neighbors, if the entity is blue. it is looking for more neighbors, if it is red, the opposite.</p>,
                     <p>You can click and hold for them to follow an objective.</p>,
                 ],
             },
             reactionDiffusion: {
                 frame_title: "Reaction- Diffusion",
-                title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target='_blank' rel='noreferrer'>Reaction-Diffusion Model</a></h2>,
+                title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target="_blank" rel="noopener noreferrer">Reaction-Diffusion Model</a></h2>,
                 description: [
-                    <p>Again, inspired by the video by <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target='_blank' rel='noreferrer'>Daniel Shiffman</a>. Following the implementation of <a href='http://karlsims.com/rd.html' target='_blank' rel='noreferrer'>Karl Sims</a> and the work of <a href='http:/ /mrob.com/pub/comp/xmorphia/' target='_blank' rel='noreferrer'>Gray-Scott</a>, I first made a version using <a href='https://lelesf99.github. io/ReactDiffusion/ReactDiffuseCPU/index.html' target='_blank' rel='noreferrer'>Canvas API</a>.</p>,
-                    <p>Researching about WebGL, I implemented <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target='_blank' rel='noreferrer'>the same algorithm using WebGL</a>, applying the heavy convolution formulas on the GPU, dramatically improving performance.</p>,
+                    <p>Again, inspired by the video by <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>. Following the implementation of <a href='http://karlsims.com/rd.html' target="_blank" rel="noopener noreferrer">Karl Sims</a> and the work of <a href='http:/ /mrob.com/pub/comp/xmorphia/' target="_blank" rel="noopener noreferrer">Gray-Scott</a>, I first made a version using <a href='https://lelesf99.github. io/ReactDiffusion/ReactDiffuseCPU/index.html' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
+                    <p>Researching about WebGL, I implemented <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">the same algorithm using WebGL</a>, applying the heavy convolution formulas on the GPU, dramatically improving performance.</p>,
                 ],
             }
         }
