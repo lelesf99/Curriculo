@@ -42,6 +42,6 @@
 
 .click-card:hover,
 .click-card:focus {
-    transform: scale(1.0625);
+    transform: scale(1.02);
     z-index: 1;
 }

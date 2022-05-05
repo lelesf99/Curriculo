@@ -42,7 +42,7 @@ function App() {
           <div className='about-text'>
             <h2>{text.about.title}</h2>
             {text.about.description.map((p, index) => {
-              return <p key={index}><br />{p}</p>
+              return <div className='line' key={index}>{p} </div>
             })}
           </div>
         </>

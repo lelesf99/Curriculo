@@ -4,8 +4,12 @@ export const mockData = {
             frame_title: "Vinícius Leles Feitosa",
             title: "Sobre mim",
             description: [
-                "Sou apaixonado pela arte e pela computação, sempre me encaixei melhor no mercado de desenvolvimento frontend, mas isso nunca me impediu de aprender, tenho experiencia com front e backend igualmente. Penso que a web representa a democratização do software e nunca foi tão fácil e divertido programar.",
-                "Neste currículo apresento minhas habilidades e também os projetos que mais gostei de fazer."
+                <p>Programador com 2 anos de experiência em desenvolvimento web full-stack. Habilidade de construir websites interativos e com foco na usabilidade do usuário. Capacidade comprovada de manter e melhorar sistemas legados em HTML+CSS+PHP puros, assim como usar novas tecnologias, construindo sistemas com Angular e Laravel.</p>,
+                <p>Fiz esse currículo utilizando React.js, sem nenhum uso de componentes, bibliotecas ou estilos CSS de terceiros.</p>,
+                <h2>Contato:</h2>,
+                <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lelesf99/" target="_blank" rel="noopener noreferrer">/in/lelesf99</a></p>,
+                <p>Email: <a href="mailto:viniciuslelesf@gmail.com">viniciuslelesf@gmail.com</a></p>
             ]
         },
         skills: {
@@ -51,21 +55,27 @@ export const mockData = {
         edu: {
             frame_title: "Educação",
             description: [
-                "MÉDIO  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA",
-                "TÉCNICO  |  2014 - 2016 (300HRS)  |  MCTECH –  CURSO DE DESENVOLVIMENTO WEB",
-                "SUPERIOR  |  (CURSANDO)  |  UNIVERSIDADE FEDERAL DE GOIÁS – CIÊNCIA DA COMPUTAÇÃO",
+                "- MÉDIO  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA",
+                "- TÉCNICO  |  2014 - 2016 (300HRS)  |  MCTECH –  CURSO DE DESENVOLVIMENTO WEB",
+                "- SUPERIOR  |  (CURSANDO)  |  UNIVERSIDADE FEDERAL DE GOIÁS – CIÊNCIA DA COMPUTAÇÃO",
             ]
         },
         exp: {
             frame_title: "Experiência",
-            sub_title: <h3>Projetos pessoais e universitários em Web e C, no meu <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>. <br /><br /></h3>,
+            sub_title: <p>- Projetos pessoais e universitários em Web e C, no meu <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>. <br /><br /></p>,
             description: [
-                <h3><strong>DESENVOLVEDOR FRONTEND |  CGE  | 2020 - 2022</strong><br /> Estágio na Controladoria Geral do Estado de Goiás, trabalhando na equipe de TI como desenvolvedor web full-stack de hotsites, e manutenção dos sites da CGE e do Portal da Transparência de Goiás (HTML, CSS, Javascript, php, mySql e Joomla).</h3>,
-                <h3><strong>DESENVOLVEDOR FULL STACK  |  G4F SOLUÇÔES  | 2022 - ATUAL</strong><br /> Desenvolvedor full stack, trabalhando com Angular e laravel, além de manter e atualizar sites Joomla e Hotsites em HTML CSS Javascript e PHP.</h3>
+                <>
+                    <h3><strong>- DESENVOLVEDOR FRONTEND |  CGE  | 2020 - 2022</strong></h3>
+                    <p> Estágio na Controladoria Geral do Estado de Goiás, trabalhando na equipe de TI como desenvolvedor web full-stack de hotsites, e manutenção dos sites da CGE e do Portal da Transparência de Goiás (HTML, CSS, Javascript, php, mySql e Joomla).</p>
+                </>,
+                <>
+                    <h3><strong>- DESENVOLVEDOR FULL STACK  |  G4F SOLUÇÔES  | 2022 - ATUAL</strong></h3>
+                    <p>Desenvolvedor full stack, trabalhando com Angular e laravel, além de manter e atualizar sites Joomla e Hotsites em HTML CSS Javascript e PHP.</p>
+                </>
             ]
         },
         projects: {
-            description: "Alguns dos meus projetos favoritos:",
+            description: "Alguns dos meus projetos pessoais:",
             boids: {
                 frame_title: "Boids",
                 title: <h2>Algoritmo de Boids por <a href='https://www.red3d.com/cwr/index.html'>Craig Reynolds</a></h2>,
@@ -93,8 +103,12 @@ export const mockData = {
             frame_title: "Vinícius Leles Feitosa",
             title: "About me",
             description: [
-                "I'm passionate about art and computing, I always fit better in the frontend development market, but that never stopped me from learning, I have experience with frontend and backend equally. I think the web represents the democratization of software and programming has never been so easy and fun.",
-                "In this curriculum I present my skills and also the projects I most enjoyed doing."
+                <p>Software Engineer with 2 years of experience in full-stack web development. Expertise in building interactive and user-centered websites to scale. Proven ability to maintain and improve legacy systems in pure HTML5+CSS+PHP, aswell as use new technologies, building systems with Angular and Laravel.</p>,
+                <p>I built this resume using React.js, without third party components, libraries or CSS stylesheets.</p>,
+                <h2> Contact:</h2>,
+                <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lelesf99/" target="_blank" rel="noopener noreferrer">/in/lelesf99</a></p>,
+                <p>Email: <a href="mailto:viniciuslelesf@gmail.com">viniciuslelesf@gmail.com</a></p>
             ]
         },
         skills: {
@@ -114,7 +128,7 @@ export const mockData = {
                 description: [
                     "Professional experience working with HTML, CSS and Javascript.",
                     "Knowledge of Jquery, React.js, and professional experience in Angular",
-                    "Notions of UX and Design"
+                    "Knowledge of UX and Design patterns"
                 ]
             },
             {
@@ -140,21 +154,27 @@ export const mockData = {
         edu: {
             frame_title: "Education",
             description: [
-                "HIGH SCHOOL  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA",
-                "CERTIFICATE COURSE  |  2014 - 2016 (300HRS)  |  MCTECH –  WEB DEVELOPMENT COURSE",
-                "BACHELOR'S  |  (CURRENT TIME)  |  UNIVERSIDADE FEDERAL DE GOIÁS – COMPUTER SCIENCE",
+                "- HIGH SCHOOL  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA",
+                "- CERTIFICATE COURSE  |  2014 - 2016 (300HRS)  |  MCTECH –  WEB DEVELOPMENT COURSE",
+                "- BACHELOR'S  |  (CURRENT TIME)  |  UNIVERSIDADE FEDERAL DE GOIÁS – COMPUTER SCIENCE",
             ]
         },
         exp: {
             frame_title: "Experience",
-            sub_title: <h3>Personal and university projects in Web and C, on my <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>.<br /><br /></h3>,
+            sub_title: <p>- Personal and university projects in Web and C, on my <a href='https://github.com/lelesf99' target='_blank' rel='noreferrer'>Github</a>.<br /><br /></p>,
             description: [
-                <h3><strong>FRONTEND DEVELOPER |  CGE  | 2020 - 2022</strong><br /> Internship at the General Controllership of the State of Goiás, working in the IT team as a full-stack web developer of hotsites, and maintenance of the CGE sites and the Transparency Portal de Goiás (HTML, CSS, Javascript, php, mySql and Joomla).</h3>,
-                <h3><strong>FULL STACK DEVELOPER  |  G4F SOLUTIONS  | 2022 - CURRENT</strong><br /> Full stack developer, working with Angular and laravel, in addition to maintaining and updating Joomla sites and Hotsites in HTML, CSS, Javascript and PHP.</h3>
+                <>
+                    <h3><strong>- FRONTEND DEVELOPER |  CGE  | 2020 - 2022</strong></h3>
+                    <p> Internship at the General Controllership of the State of Goiás, working in the IT team as a full-stack web developer of hotsites, and maintenance of the CGE sites and the Transparency Portal de Goiás (HTML, CSS, Javascript, php, mySql and Joomla).</p>
+                </>,
+                <>
+                    <h3><strong>- FULL STACK DEVELOPER  |  G4F SOLUTIONS  | 2022 - CURRENT</strong></h3>
+                    <p> Full stack developer, working with Angular and laravel, in addition to maintaining and updating Joomla sites and Hotsites in HTML, CSS, Javascript and PHP.</p>
+                </>
             ]
         },
         projects: {
-            description: "Some of my favorite projects:",
+            description: "Some of my personal projects:",
             boids: {
                 frame_title: "Boids",
                 title: <h2>Boids Algorithm by por <a href='https://www.red3d.com/cwr/index.html'>Craig Reynolds</a></h2>,

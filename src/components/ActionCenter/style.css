@@ -1,19 +1,19 @@
 .action-center {
     position: sticky;
     display: block;
-    height: 4rem;
+    height: 3rem;
     top: 0;
     z-index: 10;
 }
 
 .action-btn {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: none;
     background-color: var(--off-white);
     color: var(--off-black);
     border-radius: var(--border-radius-pill);
-    box-shadow: var(--box-shadow-heavy);
+    box-shadow: var(--box-shadow-light);
 }
 
 .action-btn:focus,
@@ -47,7 +47,7 @@
 .mobile-nav-toggle span::before,
 .mobile-nav-toggle span::after {
     position: absolute;
-    top: 1.2rem;
+    top: .7rem;
     width: 2rem;
     height: 5px;
     border-radius: 2px;
@@ -91,6 +91,7 @@
     z-index: 9;
     position: absolute;
     cursor: pointer;
+    pointer-events: none;
     transition: color 100ms,
         background-color 100ms,
         transform 400ms var(--bounce);
@@ -102,13 +103,15 @@
 }
 
 .theme-btn.shown {
-    transform: translateX(5rem);
+    transform: translateX(3.5rem);
+    pointer-events: unset;
 }
 
 .lang-btn {
     z-index: 8;
     position: absolute;
     cursor: pointer;
+    pointer-events: none;
     transition: color 100ms,
         background-color 100ms,
         transform 400ms 50ms var(--bounce);
@@ -120,7 +123,8 @@
 }
 
 .lang-btn.shown {
-    transform: translateX(10rem);
+    transform: translateX(7rem);
+    pointer-events: unset;
 }
 
 .pdf-btn {
