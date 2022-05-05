@@ -45,3 +45,42 @@
     transform: scale(1.02);
     z-index: 1;
 }
+
+.card.click-card {
+    position: relative;
+}
+
+
+.card.click-card:not(.active) {
+    outline: solid 3px var(--white);
+}
+
+.card.click-card:not(.active) .card-header {
+    border: none;
+}
+
+.card.click-card .card-body ul {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.card.click-card .card-header h2 {
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.card.click-card .level-wrapp {
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    inset: 0;
+    margin: 0;
+    transform-origin: top;
+    transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
+}
+
+.card.click-card.active .level-wrapp {
+    top: 6rem;
+    height: 2rem;
+    transform: scaleX(.9);
+}

@@ -1,12 +1,12 @@
 .frame {
     position: relative;
-    outline: solid 3px var(--dark-color2);
+    outline: solid 3px var(--accent-color);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
     margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
     align-items: flex-start;
     box-sizing: border-box;
@@ -24,7 +24,7 @@
 
 
 .frame:focus {
-    outline: solid 3px var(--dark-color3);
+    outline: solid 3px var(--accent-color2);
 }
 
 @media screen and (max-width: 640px) {

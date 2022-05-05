@@ -10,16 +10,16 @@
     width: 3rem;
     height: 3rem;
     border: none;
-    background-color: var(--off-white);
-    color: var(--off-black);
+    background-color: var(--white);
+    color: var(--dark-color);
     border-radius: var(--border-radius-pill);
-    box-shadow: var(--box-shadow-light);
+    transition: box-shadow 100ms, color 100ms;
 }
 
 .action-btn:focus,
 .action-btn:hover {
-    background-color: var(--off-black);
-    color: var(--off-white);
+    box-shadow: var(--box-shadow-light);
+    color: var(--accent-color2);
 }
 
 .action-btn:focus span,
@@ -28,7 +28,7 @@
 .action-btn:hover span,
 .action-btn:hover span::before,
 .action-btn:hover span::after {
-    background-color: var(--off-white);
+    background-color: var(--accent-color2);
 }
 
 /* Three lines ---------------------------*/
@@ -52,7 +52,7 @@
     height: 5px;
     border-radius: 2px;
     background: var(--dark-color);
-    transition: transform 400ms var(--bounce),
+    transition: background-color 100ms, transform 400ms var(--bounce),
         opacity 200ms;
 }
 
@@ -93,7 +93,7 @@
     cursor: pointer;
     pointer-events: none;
     transition: color 100ms,
-        background-color 100ms,
+        box-shadow 100ms,
         transform 400ms var(--bounce);
 }
 
@@ -112,8 +112,8 @@
     position: absolute;
     cursor: pointer;
     pointer-events: none;
-    transition: color 100ms,
-        background-color 100ms,
+    transition: color 200ms,
+        box-shadow 200ms,
         transform 400ms 50ms var(--bounce);
 }
 

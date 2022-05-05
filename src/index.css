@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family:'Roboto Slab', serif, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Source Serif Pro', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,41 +21,33 @@ code {
     --box-shadow: .2rem .3rem .5rem #00000033;
     --box-shadow-light: .2rem .3rem .5rem #00000022;
     --box-shadow-heavy: .4rem .6rem 1rem #00000055;
-    --border-radius-rounded: 1em;
+    --border-radius-rounded: 1rem;
     --border-radius-pill: 100vw;
-    --border-radius: .2em;
+    --border-radius: .1rem;
     --bounce: cubic-bezier(0.25, 1.85, 0.6, 1);
 
 }
 
 :root.dark {
     --white: #000000;
+    --off-white: #212529;
+    --light-color: hsl(210, 33%, 33%);
     --black: #ffffff;
-    --off-black: #e8f3ff;
-    --off-white: #17191a;
-    --light-color: #145DA0;
-    --light-color2: #144064;
-    --light-color3: #050A30;
-    --dark-color: #D4F1F4;
-    --dark-color2: #75E6DA;
-    --dark-color3: #189AB4;
-    --danger-color: #dd4d4d;
-    --danger-color2: #be3535;
+    --off-black: #f8f9fa;
+    --dark-color: hsl(210, 50%, 73%);
+    --accent-color: hsl(190deg 75% 70%);
+    --accent-color2: hsl(22, 75%, 55%);
 }
 
 :root.light {
-    --white: #ffffff;
     --black: #000000;
-    --off-white: #e8f3ff;
-    --off-black: #17191a;
-    --dark-color: #050A30;
-    --dark-color2: #144064;
-    --dark-color3: #145DA0;
-    --light-color: #D4F1F4;
-    --light-color2: #75E6DA;
-    --light-color3: #189AB4;
-    --danger-color: #dd4d4d;
-    --danger-color2: #be3535;
+    --off-black: #222222;
+    --dark-color: #81b29a;
+    --white: #ffffff;
+    --off-white: hsl(0, 54%, 95%);
+    --light-color: #f2cc8f;
+    --accent-color: #3d405b;
+    --accent-color2: #e07a5f;
 }
 
 * {
@@ -73,7 +66,7 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark-color2);
+    background: var(--accent-color);
     border-radius: 1em;
     border: var(--off-white) solid 2px;
     box-sizing: border-box;
@@ -85,7 +78,7 @@ code {
 
 @supports(scrollbar-width: none) {
     * {
-        scrollbar-color: var(--light-color2) var(--dark-color2);
+        scrollbar-color: var(--accent-color) var(--accent-color);
         scrollbar-width: thin;
     }
 }
@@ -106,7 +99,13 @@ code {
 
 a {
     text-decoration: none;
-    color: var(--dark-color2);
+    color: var(--accent-color);
+    transition: color 100ms;
+}
+
+a:focus,
+a:hover {
+    color: var(--accent-color2);
 }
 
 p,
@@ -124,10 +123,6 @@ p {
     text-align: justify;
 }
 
-a:focus,
-a:hover {
-    color: var(--dark-color3);
-}
 
 h1,
 h2,
@@ -135,14 +130,14 @@ h3,
 h4,
 h5,
 h6{
-    font-family:  'Source Serif Pro', serif;
+    font-family:  'Roboto Slab', serif, sans-serif;
 }
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: var(--off-white);
-    color: var(--dark-color);
+    color: var(--black);
     transition: color 250ms, background-color 500ms;
 }
 

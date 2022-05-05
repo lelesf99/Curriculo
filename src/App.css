@@ -14,7 +14,7 @@
     padding: 1rem;
     overflow: auto;
     animation: fadeIn 500ms forwards;
-    font-size: 14pt;
+    font-size: 15pt;
 }
 
 .container {
@@ -61,46 +61,6 @@ video {
     margin: auto;
 }
 
-
-.card.click-card {
-    position: relative;
-}
-
-
-.card.click-card:not(.active) {
-    outline: solid 3px var(--light-color3);
-}
-
-.card.click-card:not(.active) .card-header {
-    border: none;
-}
-
-.card.click-card .card-body ul {
-    margin-top: 3rem;
-    margin-left: 2rem;
-}
-
-.card.click-card .card-header h2 {
-    z-index: 1;
-    white-space: nowrap;
-}
-
-.card.click-card .level-wrapp {
-    position: absolute;
-    height: 100%;
-    z-index: 0;
-    inset: 0;
-    margin: 0;
-    transform-origin: top;
-    transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
-}
-
-.card.click-card.active .level-wrapp {
-    top: 6rem;
-    height: 2rem;
-    transform: scaleX(.9);
-}
-
 .line {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -116,12 +76,12 @@ video {
 
 @media (max-width: 991px) {
     .app{
-        font-size: 12pt;
+        font-size: 13pt;
     }
 }
 
 @media (max-width: 556px) {
     .app{
-        font-size: 10pt;
+        font-size: 11pt;
     }
 }

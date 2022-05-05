@@ -7,7 +7,7 @@
     box-shadow: var(--box-shadow-light);
     border: none;
     border-radius: var(--border-radius);
-    background-color: var(--light-color2);
+    background-color: var(--accent-color);
     overflow: hidden;
     z-index: 1;
     transition: background-color 500ms;
@@ -29,7 +29,7 @@
 }
 
 .btn:focus {
-    outline: var(--dark-color2) solid 2px;
+    outline: var(--accent-color) solid 2px;
     color: var(--light-color);
 }
 
