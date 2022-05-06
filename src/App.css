@@ -27,7 +27,8 @@
 
 
 .profile-pic {
-    display: inline;
+    display: flex;
+    align-self: center;
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
@@ -36,8 +37,6 @@
 }
 
 .profile-pic img {
-    max-width: 300px;
-    max-height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: top;

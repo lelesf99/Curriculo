@@ -50,7 +50,7 @@ function App() {
 
 
 
-      <Frame className='container' title={text.skills.frame_title}>
+      <Frame className='container' title={text.skills.frame_title} noOutline={true}>
         {text.skills.cards.map((card, index) => {
           return <ClickCard
             key={index}

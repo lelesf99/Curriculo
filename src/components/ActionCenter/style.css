@@ -11,7 +11,7 @@
     height: 3rem;
     border: none;
     background-color: var(--white);
-    color: var(--dark-color);
+    color: var(--accent-color);
     border-radius: var(--border-radius-pill);
     transition: box-shadow 100ms, color 100ms;
 }
@@ -51,7 +51,7 @@
     width: 2rem;
     height: 5px;
     border-radius: 2px;
-    background: var(--dark-color);
+    background: var(--accent-color);
     transition: background-color 100ms, transform 400ms var(--bounce),
         opacity 200ms;
 }

@@ -5,7 +5,7 @@ export const mockData = {
             title: "Sobre mim",
             description: [
                 <p>Programador com 2 anos de experiência em desenvolvimento web full-stack. Habilidade de construir websites interativos e com foco na usabilidade do usuário. Capacidade comprovada de manter e melhorar sistemas legados em HTML+CSS+PHP puros, assim como usar novas tecnologias, construindo sistemas com Angular e Laravel.</p>,
-                <p>Fiz esse currículo utilizando React.js, sem nenhum uso de componentes, bibliotecas ou estilos CSS de terceiros.</p>,
+                <p>Fiz esse currículo do zero utilizando React.js.</p>,
                 <h2>Contato:</h2>,
                 <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/lelesf99/" target="_blank" rel="noopener noreferrer">/in/lelesf99</a></p>,
@@ -104,7 +104,7 @@ export const mockData = {
             title: "About me",
             description: [
                 <p>Software Engineer with 2 years of experience in full-stack web development. Expertise in building interactive and user-centered websites to scale. Proven ability to maintain and improve legacy systems in pure HTML5+CSS+PHP, aswell as use new technologies, building systems with Angular and Laravel.</p>,
-                <p>I built this resume using React.js, without third party components, libraries or CSS stylesheets.</p>,
+                <p>I built this resume from scratch using React.js.</p>,
                 <h2> Contact:</h2>,
                 <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/lelesf99/" target="_blank" rel="noopener noreferrer">/in/lelesf99</a></p>,

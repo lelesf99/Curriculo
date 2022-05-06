@@ -27,6 +27,10 @@
     outline: solid 3px var(--accent-color2);
 }
 
+.no-outline{
+    outline: none !important;
+}
+
 @media screen and (max-width: 640px) {
     .frame .title {
         font-size: 1.4rem;

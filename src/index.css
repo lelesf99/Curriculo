@@ -23,7 +23,7 @@ code {
     --box-shadow-heavy: .4rem .6rem 1rem #00000055;
     --border-radius-rounded: 1rem;
     --border-radius-pill: 100vw;
-    --border-radius: .1rem;
+    --border-radius: .3rem;
     --bounce: cubic-bezier(0.25, 1.85, 0.6, 1);
 
 }
