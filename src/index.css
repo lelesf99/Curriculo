@@ -18,9 +18,9 @@ code {
 }
 
 :root {
-    --box-shadow: .2rem .3rem .5rem #00000033;
-    --box-shadow-light: .2rem .3rem .5rem #00000022;
-    --box-shadow-heavy: .4rem .6rem 1rem #00000055;
+    --box-shadow: .1rem .1rem .5rem #00000033;
+    --box-shadow-light: .1rem .1rem .5rem #00000022;
+    --box-shadow-heavy: .1rem .1rem 2rem .5rem #00000075;
     --border-radius-rounded: 1rem;
     --border-radius-pill: 100vw;
     --border-radius: .3rem;

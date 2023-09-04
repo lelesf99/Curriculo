@@ -1,10 +1,7 @@
-import './style.css'
+import './style.css';
 
-import { useState, useEffect } from "react";
-import { MdDarkMode, MdLightMode, MdLanguage, MdOutlineFileDownload } from 'react-icons/md'
-import ReactPDF, { PDFDownloadLink } from '@react-pdf/renderer';
-import React from 'react';
-import App from '../../App';
+import React, { useEffect, useState } from 'react';
+import { MdDarkMode, MdLanguage, MdLightMode, MdOutlineFileDownload } from 'react-icons/md';
 
 export default function ActionCenter(props) {
 
@@ -13,7 +10,7 @@ export default function ActionCenter(props) {
     const [lang, setLang] = useState(true);
 
     const toggleActive = () => setActive(!active);
-    const downloadPdf = (comp) => console.log(document.querySelector('#root').innerHTML);
+    const downloadPdf = (comp) => {};
 
     useEffect(() => {
         localStorage.setItem('theme', JSON.stringify(theme));
@@ -46,10 +43,9 @@ export default function ActionCenter(props) {
             }}>
                 <MdLanguage />
             </button>
-            {/* <button className={`action-btn pdf-btn  ${active ? 'shown' : 'hidden'}`} on onClick={downloadPdf()}>
-
+            <a href="/resume.pdf" download="Resume.pdf" className={`action-btn pdf-btn  ${active ? 'shown' : 'hidden'}`} onClick={downloadPdf()}>
                 <MdOutlineFileDownload />
-            </button> */}
+            </a>
         </div>
     );
 }

@@ -2,13 +2,11 @@
     background-color: var(--white);
     box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius);
-    min-width: 150px;
-    overflow: hidden;
+    min-width: 350px;
     transition: background-color 500ms;
 }
 
 .card-header:not(:last-child) {
-    border-bottom: var(--off-black) solid 1px;
     padding: 1em;
 }
 
@@ -18,11 +16,13 @@
 }
 
 .card-body.collapse {
+    pointer-events: none;
     padding: 0;
     transition: opacity 250ms, height 250ms 250ms ease;
 }
 
 .active .card-body.collapse {
+    pointer-events: all;
     transition: opacity 250ms, height 250ms ease;
 }
 
@@ -60,7 +60,6 @@
 }
 
 .card.click-card .card-body ul {
-    margin-top: 3rem;
     margin-left: 2rem;
 }
 
@@ -76,11 +75,12 @@
     inset: 0;
     margin: 0;
     transform-origin: top;
-    transition: background-color 500ms, top 250ms, transform 250ms, height 250ms;
+    transition: background-color 500ms, top 250ms, transform 250ms, height 250ms,  width 250ms;
 }
 
 .card.click-card.active .level-wrapp {
-    top: 6rem;
-    height: 2rem;
-    transform: scaleX(.9);
+    top: 0;
+    height: 5rem;
+    transform: scaleX(1.01) scaleY(1.1);
+    transform-origin: center;
 }

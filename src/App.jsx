@@ -9,7 +9,6 @@ import ActionCenter from './components/ActionCenter';
 import ReactionDiffusion from './img/react-difuse.mp4';
 import { useEffect, useState, useRef } from 'react';
 import { mockData } from './mockData';
-
 function App() {
 
   const appRef = useRef();
@@ -21,18 +20,18 @@ function App() {
 
   useEffect(() => {
     const ref = appRef;
-    ref.current.addEventListener('scroll', (e) => setScroll(e.target.scrollTop), {
+    const listener = ref.current.addEventListener('scroll', (e) => setScroll(e.target.scrollTop), {
       capture: true,
       passive: true
     });
     return () => {
-      ref.current.removeEventListener('scroll', (e) => setScroll(e.target.scrollTop));
+      ref.current.removeEventListener('scroll', listener);
     }
   }, []);
 
   return (
     <div className={`app`} ref={appRef}>
-      <ActionCenter toggleLang={toggleLang}></ActionCenter>
+      <ActionCenter toggleLang={toggleLang} data={text}></ActionCenter>
       <Frame className='container' title={text.about.frame_title}>
         <>
           <div className='profile-pic'>
@@ -47,10 +46,9 @@ function App() {
           </div>
         </>
       </Frame>
-
-
-
-      <Frame className='container' title={text.skills.frame_title} noOutline={true}>
+      <Frame className='container' title={text.skills.frame_title} noOutline={true} tooltip={text.code === 1
+        ? <p>As barras são apenas uma representação abstrata e visual do que eu considero que tenho mais experiência.</p>
+        : <p>The bars are just an abstract and visual representation of what I consider to have more experience.</p>}>
         {text.skills.cards.map((card, index) => {
           return <ClickCard
             key={index}
@@ -115,7 +113,6 @@ function App() {
       </Frame>
 
     </div >
-
   );
 }
 

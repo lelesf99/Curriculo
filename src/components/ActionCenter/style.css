@@ -9,6 +9,7 @@
 .action-btn {
     width: 3rem;
     height: 3rem;
+    padding: .3rem;
     border: none;
     background-color: var(--white);
     color: var(--accent-color);
@@ -50,7 +51,7 @@
     top: .7rem;
     width: 2rem;
     height: 5px;
-    border-radius: 2px;
+    border-radius: 3px;
     background: var(--accent-color);
     transition: background-color 100ms, transform 400ms var(--bounce),
         opacity 200ms;
@@ -142,5 +143,5 @@
 }
 
 .pdf-btn.shown {
-    transform: translateX(15rem);
+    transform: translateX(10.5rem);
 }

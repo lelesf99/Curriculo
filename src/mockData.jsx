@@ -1,10 +1,11 @@
 export const mockData = {
     pt_BR: {
+        code: 1,
         about: {
             frame_title: "Vinícius Leles Feitosa",
             title: "Sobre mim",
             description: [
-                <p>Programador com 2 anos de experiência em desenvolvimento web full-stack. Habilidade de construir websites interativos e com foco na usabilidade do usuário. Capacidade comprovada de manter e melhorar sistemas legados em HTML+CSS+PHP puros, assim como usar novas tecnologias, construindo sistemas com Angular e Laravel.</p>,
+                <p>Programador com 4 anos de experiência em desenvolvimento web full-stack. Habilidade de construir websites interativos e com foco na experiência do usuário. Capacidade comprovada de manter e melhorar sistemas legados em HTML+CSS+PHP puros, assim como usar novas tecnologias, sistemas projetados e entregues em Angular + Laravel.</p>,
                 <p>Fiz esse currículo do zero utilizando React.js.</p>,
                 <h2>Contato:</h2>,
                 <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
@@ -18,7 +19,7 @@ export const mockData = {
                 name: "Programação",
                 level: 13,
                 description: [
-                    "Estrutura de dados, análise de algorítmos e gerenciamento de memória.",
+                    "Estrutura de dados, análise de algoritmos e gerenciamento de memória.",
                     "Programação orientada a objetos com Java e Javascript",
                     "Noções de programação funcional com Clojure"
                 ]
@@ -36,7 +37,7 @@ export const mockData = {
                 name: "Backend",
                 level: 13,
                 description: [
-                    "Experiencia com banco de dados relacionais (php e mySql), e não relacionais (firebase firestore).",
+                    "Experiência com banco de dados relacionais (postgreSQL e mySql), e não relacionais (firebase firestore).",
                     "Experiência com Laravel.",
                     "Experiência com Strapi",
                 ]
@@ -92,18 +93,19 @@ export const mockData = {
                 title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target="_blank" rel="noopener noreferrer">Modelo de Reação-Difusão</a></h2>,
                 description: [
                     <p>Novamente, inspirado no vídeo de <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>. Seguindo a implementação de <a href='http://karlsims.com/rd.html' target="_blank" rel="noopener noreferrer">Karl Sims</a> e os trabalhos de <a href='http://mrob.com/pub/comp/xmorphia/' target="_blank" rel="noopener noreferrer">Gray-Scott</a>, fiz primeiro uma versão utilizando a <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseCPU/index.html' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
-                    <p>Pesquisando sobre WebGL, implementei <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">o mesmo algoritmo utilizando WebGL</a>, aplicando as pesadas formulas de convolução na GPU, melhorando drastiacamente a performance.</p>,
+                    <p>Pesquisando sobre WebGL, implementei <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">o mesmo algoritmo utilizando WebGL</a>, aplicando as pesadas formulas de convolução na GPU, melhorando drasticamente a performance.</p>,
                 ],
             }
 
         }
     },
     en_US: {
+        code: 2,
         about: {
             frame_title: "Vinícius Leles Feitosa",
             title: "About me",
             description: [
-                <p>Software Engineer with 2 years of experience in full-stack web development. Expertise in building interactive and user-centered websites to scale. Proven ability to maintain and improve legacy systems in pure HTML5+CSS+PHP, aswell as use new technologies, building systems with Angular and Laravel.</p>,
+                <p>Software Engineer with 4 years of experience in full-stack web development. Expertise in building interactive and user-centered websites to scale. Proven ability to maintain and improve legacy systems in pure HTML5+CSS+PHP, as well as using new technologies, designed and delivered systems using Angular + Laravel.</p>,
                 <p>I built this resume from scratch using React.js.</p>,
                 <h2> Contact:</h2>,
                 <p>Github: <a href="https://github.com/lelesf99" target="_blank" rel="noopener noreferrer">lelesf99</a></p>,
@@ -119,7 +121,7 @@ export const mockData = {
                 description: [
                     "Data structures, algorithm analysis and memory management with C/C++.",
                     "Object Oriented programming with Java and Javascript",
-                    "Notions on Functional programmig with Clojure"
+                    "Notions of functional programming with Clojure"
                 ]
             },
             {
@@ -146,7 +148,7 @@ export const mockData = {
                 description: [
                     "Experience with team development and code versioning (Git).",
                     "General knowledge of software engineering: agile methodologies, life cycle models and software design",
-                    "Experience working with the Scrum method"
+                    "experience working with the Scrum methodology"
                 ]
             }
             ]
@@ -156,7 +158,7 @@ export const mockData = {
             description: [
                 "- HIGH SCHOOL  |  2017  |  AGOSTINIANO N. S. DE FÁTIMA",
                 "- CERTIFICATE COURSE  |  2014 - 2016 (300HRS)  |  MCTECH –  WEB DEVELOPMENT COURSE",
-                "- BACHELOR'S  |  (CURRENT TIME)  |  UNIVERSIDADE FEDERAL DE GOIÁS – COMPUTER SCIENCE",
+                "- BACHELOR'S  |  (IN PROGRRESS)  |  UNIVERSIDADE FEDERAL DE GOIÁS – COMPUTER SCIENCE",
             ]
         },
         exp: {
@@ -165,7 +167,7 @@ export const mockData = {
             description: [
                 <>
                     <h3><strong>- FRONTEND DEVELOPER |  CGE  | 2020 - 2022</strong></h3>
-                    <p> Internship at the General Controllership of the State of Goiás, working in the IT team as a full-stack web developer of hotsites, and maintenance of the CGE sites and the Transparency Portal de Goiás (HTML, CSS, Javascript, php, mySql and Joomla).</p>
+                    <p> Internship at the General Controllership of the State of Goiás, working in the IT team as a full-stack web developer of landing pages, and maintenance of the CGE sites and the Goiás's state Transparency Site  (HTML, CSS, Javascript, php, mySql and Joomla).</p>
                 </>,
                 <>
                     <h3><strong>- FULL STACK DEVELOPER  |  G4F SOLUTIONS  | 2022 - CURRENT</strong></h3>
@@ -177,19 +179,19 @@ export const mockData = {
             description: "Some of my personal projects:",
             boids: {
                 frame_title: "Boids",
-                title: <h2>Boids Algorithm by por <a href='https://www.red3d.com/cwr/index.html'>Craig Reynolds</a></h2>,
+                title: <h2>Boids Algorithm by <a href='https://www.red3d.com/cwr/index.html'  target="_blank" rel="noopener noreferrer">Craig Reynolds</a></h2>,
                 description: [
-                    <p>"Inspired by the videos of <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target="_blank" rel="noopener noreferrer">Sebastian Lague</a>, and <a href='https ://www.youtube.com/watch?v=mhjuuHl6qHM&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>, I implemented my version, using the rendering methods of <a href='https: //developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
-                    <p>I optimized the implementation with the quadtree method and making each entity look for a fixed number of neighbors, if the entity is blue. it is looking for more neighbors, if it is red, the opposite.</p>,
+                    <p>"Inspired by the videos of <a href='https://www.youtube.com/watch?v=bqtqltqcQhw' target="_blank" rel="noopener noreferrer">Sebastian Lague</a>, and <a href='https://www.youtube.com/watch?v=mhjuuHl6qHM&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>, I implemented my version, using the rendering methods of <a href='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
+                    <p>I optimized the implementation with the quadtree method and making each entity look for a fixed number of neighbors, if the entity is blue, it is looking for more neighbors; if it is red, the opposite is true.</p>,
                     <p>You can click and hold for them to follow an objective.</p>,
                 ],
             },
             reactionDiffusion: {
-                frame_title: "Reaction- Diffusion",
-                title: <h2><a href='https://pt.wikipedia.org/wiki/Modelo_de_Rea%C3%A7%C3%A3o-Difus%C3%A3o' target="_blank" rel="noopener noreferrer">Reaction-Diffusion Model</a></h2>,
+                frame_title: "Reaction-Diffusion",
+                title: <h2><a href='https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system' target="_blank" rel="noopener noreferrer">Reaction-Diffusion Model</a></h2>,
                 description: [
-                    <p>Again, inspired by the video by <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>. Following the implementation of <a href='http://karlsims.com/rd.html' target="_blank" rel="noopener noreferrer">Karl Sims</a> and the work of <a href='http:/ /mrob.com/pub/comp/xmorphia/' target="_blank" rel="noopener noreferrer">Gray-Scott</a>, I first made a version using <a href='https://lelesf99.github. io/ReactDiffusion/ReactDiffuseCPU/index.html' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
-                    <p>Researching about WebGL, I implemented <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">the same algorithm using WebGL</a>, applying the heavy convolution formulas on the GPU, dramatically improving performance.</p>,
+                    <p>Again, inspired by the video by <a href='https://www.youtube.com/watch?v=BV9ny785UNc&t' target="_blank" rel="noopener noreferrer">Daniel Shiffman</a>. Following the implementation of <a href='http://karlsims.com/rd.html' target="_blank" rel="noopener noreferrer">Karl Sims</a> and the work of <a href='http://mrob.com/pub/comp/xmorphia/' target="_blank" rel="noopener noreferrer">Gray-Scott</a>, I first made a version using <a href='https://lelesf99.github. io/ReactDiffusion/ReactDiffuseCPU/index.html' target="_blank" rel="noopener noreferrer">Canvas API</a>.</p>,
+                    <p>Researching about WebGL, I implemented <a href='https://lelesf99.github.io/ReactDiffusion/ReactDiffuseGPU/index.html' target="_blank" rel="noopener noreferrer">the same algorithm using WebGL</a>, applying the heavy convolution formulas on the GPU, drastically improving performance.</p>,
                 ],
             }
         }

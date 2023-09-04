@@ -17,7 +17,6 @@
     border-radius: var(--border-radius);
     overflow: hidden;
     margin-top: 1rem;
-    outline: solid 2px var(--off-white);
     transition: background-color 500ms;
 }
 

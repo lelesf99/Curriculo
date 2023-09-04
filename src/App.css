@@ -72,15 +72,3 @@ video {
 .line:first-child {
     margin-top: 0rem;
 }
-
-@media (max-width: 991px) {
-    .app{
-        font-size: 13pt;
-    }
-}
-
-@media (max-width: 556px) {
-    .app{
-        font-size: 11pt;
-    }
-}
