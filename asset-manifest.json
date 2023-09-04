@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Curriculo/static/css/main.1a11b57c.chunk.css",
+    "main.css": "/Curriculo/static/css/main.eed6f427.chunk.css",
     "main.js": "/Curriculo/static/js/main.09b5d941.chunk.js",
     "main.js.map": "/Curriculo/static/js/main.09b5d941.chunk.js.map",
     "runtime-main.js": "/Curriculo/static/js/runtime-main.82d30873.js",
@@ -10,7 +10,7 @@
     "static/js/3.ad0bf12a.chunk.js": "/Curriculo/static/js/3.ad0bf12a.chunk.js",
     "static/js/3.ad0bf12a.chunk.js.map": "/Curriculo/static/js/3.ad0bf12a.chunk.js.map",
     "index.html": "/Curriculo/index.html",
-    "static/css/main.1a11b57c.chunk.css.map": "/Curriculo/static/css/main.1a11b57c.chunk.css.map",
+    "static/css/main.eed6f427.chunk.css.map": "/Curriculo/static/css/main.eed6f427.chunk.css.map",
     "static/js/2.fa6d5bf8.chunk.js.LICENSE.txt": "/Curriculo/static/js/2.fa6d5bf8.chunk.js.LICENSE.txt",
     "static/media/profile.66afccc6.jpg": "/Curriculo/static/media/profile.66afccc6.jpg",
     "static/media/react-difuse.c1a81a55.mp4": "/Curriculo/static/media/react-difuse.c1a81a55.mp4"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.82d30873.js",
     "static/js/2.fa6d5bf8.chunk.js",
-    "static/css/main.1a11b57c.chunk.css",
+    "static/css/main.eed6f427.chunk.css",
     "static/js/main.09b5d941.chunk.js"
   ]
 }
