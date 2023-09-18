@@ -43,7 +43,7 @@ export default function ActionCenter(props) {
             }}>
                 <MdLanguage />
             </button>
-            <a href="/resume.pdf" download="Resume.pdf" className={`action-btn pdf-btn  ${active ? 'shown' : 'hidden'}`} onClick={downloadPdf()}>
+            <a href="/Curriculo/resume.pdf" download="Resume.pdf" className={`action-btn pdf-btn  ${active ? 'shown' : 'hidden'}`} onClick={downloadPdf()}>
                 <MdOutlineFileDownload />
             </a>
         </div>
